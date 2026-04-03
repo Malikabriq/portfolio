@@ -1,0 +1,130 @@
+.experience {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-bg-2);
+}
+
+.experience__orb {
+  position: absolute;
+  width: 500px; height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(99,102,241,0.06) 0%, transparent 70%);
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.experience__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.experience__timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+
+.experience__timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px; top: 0; bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, transparent, rgba(99,102,241,0.2), rgba(6,182,212,0.2), transparent);
+}
+
+.experience__item {
+  position: relative;
+  padding-left: 60px;
+}
+
+.experience__marker {
+  position: absolute;
+  left: 11px; top: 20px;
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  background: var(--color-bg-1);
+  border: 2px solid #818cf8;
+  box-shadow: 0 0 10px rgba(129,140,248,0.3);
+  z-index: 1;
+}
+
+.experience__card {
+  padding: 30px;
+  transition: transform 0.3s ease;
+}
+
+.experience__card:hover {
+  transform: translateX(10px);
+}
+
+.experience__card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.experience__role {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.experience__company {
+  font-size: 0.9rem;
+  color: #818cf8;
+  font-weight: 600;
+}
+
+.experience__period {
+  font-size: 0.85rem;
+  color: #475569;
+  font-weight: 600;
+  background: rgba(255,255,255,0.04);
+  padding: 4px 12px;
+  border-radius: 100px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.experience__description {
+  font-size: 0.95rem;
+  color: #94a3b8;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.experience__highlights {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.experience__highlights li {
+  font-size: 0.875rem;
+  color: #64748b;
+  position: relative;
+  padding-left: 20px;
+  line-height: 1.5;
+}
+
+.experience__highlights li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #818cf8;
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .experience__card-header {
+    flex-direction: column;
+  }
+}
