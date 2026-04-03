@@ -58,7 +58,7 @@ export const projects = [
     accent: "#7c3aed",
     emoji: "🎯",
     stars: 0,
-    image: "/project_supportpilot.png",
+    image: "project_supportpilot.png",
   },
   {
     id: 2,
@@ -70,7 +70,7 @@ export const projects = [
     accent: "#0891b2",
     emoji: "💬",
     stars: 0,
-    image: "/project_conversaai.png",
+    image: "project_conversaai.png",
   },
   {
     id: 3,
@@ -82,7 +82,7 @@ export const projects = [
     accent: "#059669",
     emoji: "🧠",
     stars: 2,
-    image: "/project_webmind.png",
+    image: "project_webmind.png",
   },
   {
     id: 4,
@@ -94,7 +94,7 @@ export const projects = [
     accent: "#ea580c",
     emoji: "🚀",
     stars: 1,
-    image: "/project_codenova.png",
+    image: "project_codenova.png",
   },
   {
     id: 5,
@@ -106,7 +106,7 @@ export const projects = [
     accent: "#4f46e5",
     emoji: "📋",
     stars: 2,
-    image: "/project_taskmanager.png",
+    image: "project_taskmanager.png",
   },
   {
     id: 6,
@@ -118,13 +118,13 @@ export const projects = [
     accent: "#e11d48",
     emoji: "🎓",
     stars: 2,
-    image: "/project_coursemgmt.png",
+    image: "project_coursemgmt.png",
   },
 ];
 
 export const experience = [
   {
-    role: "AI Intern",
+    role: "AI Developer",
     company: "Revnix",
     period: "Oct 2025 – Present",
     description: "Working on a real professional product, developing Python-based data workflows and leveraging LLMs, LangChain, and RAG techniques to build production-grade AI features.",

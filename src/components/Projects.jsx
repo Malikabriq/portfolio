@@ -32,7 +32,7 @@ export default function Projects() {
               <div className="project-card__bar" style={{ background: `linear-gradient(90deg, ${project.accent}, transparent)` }} />
 
               <div className="project-card__image-container">
-                <img src={project.image} alt={project.name} className="project-card__img" />
+                <img src={`${import.meta.env.BASE_URL || '/'}${project.image}`} alt={project.name} className="project-card__img" />
               </div>
 
               <div className="project-card__inner">
